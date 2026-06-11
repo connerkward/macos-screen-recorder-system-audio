@@ -31,13 +31,14 @@ swift sck-record.swift out.mp4 10
 ## Usage
 
 ```
-sck-record [output.mp4] [seconds]
+sck-record [output.mp4] [seconds] [--no-cursor]
 ```
 
 | Argument | Default | Description |
 |---|---|---|
 | `output.mp4` | `~/Desktop/sck.mp4` | Output file path. Overwritten if it exists. |
 | `seconds` | `20` | Recording duration in seconds (fractional values allowed). |
+| `--no-cursor` | off | Omit the system cursor from the capture (for post-production tools that overlay a smoothed synthetic cursor). |
 
 Examples:
 

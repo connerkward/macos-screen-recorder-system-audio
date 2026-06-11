@@ -2,14 +2,19 @@
 // ScreenCaptureKit (macOS 13+). No loopback / no install needed; just Screen
 // Recording permission (same as `screencapture`). Captures the Mac's own output
 // (e.g. `say` voices), which `screencapture -g` (mic only) cannot.
-//   swift sck-record.swift <out.mp4> <seconds>
+//   swift sck-record.swift <out.mp4> <seconds> [--no-cursor]
+// --no-cursor omits the system cursor from the capture — useful when a
+// post-production step overlays a synthetic (smoothed) cursor instead.
 import Foundation
 import ScreenCaptureKit
 import AVFoundation
 import CoreMedia
 
-let outPath = CommandLine.arguments.count > 1 ? CommandLine.arguments[1] : NSHomeDirectory() + "/Desktop/sck.mp4"
-let seconds = CommandLine.arguments.count > 2 ? (Double(CommandLine.arguments[2]) ?? 20) : 20
+var argv = CommandLine.arguments
+let showCursor = !argv.contains("--no-cursor")
+argv.removeAll { $0 == "--no-cursor" }
+let outPath = argv.count > 1 ? argv[1] : NSHomeDirectory() + "/Desktop/sck.mp4"
+let seconds = argv.count > 2 ? (Double(argv[2]) ?? 20) : 20
 
 final class Recorder: NSObject, SCStreamOutput, SCStreamDelegate {
     var stream: SCStream!
@@ -29,7 +34,7 @@ final class Recorder: NSObject, SCStreamOutput, SCStreamDelegate {
         cfg.height = Int(Double(cfg.width) * Double(display.height) / Double(display.width))
         cfg.minimumFrameInterval = CMTime(value: 1, timescale: 30)
         cfg.queueDepth = 6
-        cfg.showsCursor = true
+        cfg.showsCursor = showCursor
         cfg.capturesAudio = true
         cfg.sampleRate = 48000
         cfg.channelCount = 2
