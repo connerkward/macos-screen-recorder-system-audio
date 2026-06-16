@@ -8,7 +8,7 @@
 
 ```
 /plugin marketplace add connerkward/macos-screen-recorder-system-audio
-/plugin install macos-screen-recorder@macos-screen-recorder-system-audio
+/plugin install macos-screen-recorder@macos-screen-recorder
 ```
 
 Or install the whole set: `/plugin marketplace add connerkward/connerkward-skills`. Or drop this repo's `SKILL.md` into your agent's skills directory.
