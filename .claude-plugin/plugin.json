@@ -1,0 +1,25 @@
+{
+  "name": "macos-screen-recorder",
+  "description": "macos-screen-recorder-system-audio is a tiny Swift CLI that records the macOS main display with system audio via ScreenCaptureKit",
+  "version": "0.1.0",
+  "author": {
+    "name": "Conner K Ward",
+    "url": "https://github.com/connerkward"
+  },
+  "homepage": "https://github.com/connerkward/macos-screen-recorder-system-audio",
+  "repository": "https://github.com/connerkward/macos-screen-recorder-system-audio",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-skill",
+    "claude-code-skill",
+    "agent-skills",
+    "anthropic",
+    "macos",
+    "screen-recorder",
+    "system-audio",
+    "screencapturekit",
+    "cli",
+    "swift"
+  ]
+}
