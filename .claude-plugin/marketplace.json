@@ -1,0 +1,20 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "macos-screen-recorder-system-audio",
+  "description": "macOS screen recorder with system audio via ScreenCaptureKit, CLI, no driver.",
+  "owner": {
+    "name": "Conner K Ward",
+    "url": "https://github.com/connerkward"
+  },
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "macos-screen-recorder",
+      "description": "macOS screen recorder with system audio via ScreenCaptureKit, CLI, no driver.",
+      "source": {
+        "source": "github",
+        "repo": "connerkward/macos-screen-recorder-system-audio"
+      }
+    }
+  ]
+}
