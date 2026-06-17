@@ -91,3 +91,7 @@ The capture primitive behind the record→polish workflow: the [`screencast`](ht
 ## License
 
 [MIT](LICENSE) © Conner K Ward
+
+---
+
+🧭 **[ckw-skills](https://github.com/connerkward/ckw-skills)** — part of Conner K. Ward's collection of Claude Code skills & MCP servers.
