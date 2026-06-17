@@ -1,5 +1,7 @@
 # macos-screen-recorder (sck-record)
 
+*macos-screen-recorder (sck-record) is a macOS screen recorder that captures the screen with system audio via ScreenCaptureKit — CLI, no driver, no sudo — plus a Claude Code skill.*
+
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue) ![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-d97757) ![macOS](https://img.shields.io/badge/macOS-13%2B-111) ![Swift · ScreenCaptureKit](https://img.shields.io/badge/Swift-ScreenCaptureKit-fa7343)
 
 **Record your macOS screen *with the sound your Mac is playing* — headless, from the CLI — with no virtual audio driver, no BlackHole, no Loopback, no sudo. One Swift file built on [ScreenCaptureKit](https://developer.apple.com/documentation/screencapturekit), Apple's native capture framework.**

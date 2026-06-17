@@ -1,0 +1,14 @@
+# macos-screen-recorder (sck-record)
+
+> macos-screen-recorder (sck-record) is a macOS screen recorder that captures the screen with system audio via ScreenCaptureKit — CLI, no loopback driver, no sudo — plus a Claude Code skill.
+
+## Install (Claude Code)
+- Add the marketplace: `/plugin marketplace add connerkward/ckw-skills`
+- Install this plugin: `/plugin install macos-screen-recorder@connerkward`
+
+## Links
+- Canonical README: https://github.com/connerkward/macos-screen-recorder-system-audio
+- Marketplace (all of Conner K. Ward's skills + MCP servers): https://github.com/connerkward/ckw-skills
+
+## Optional
+- Author: Conner K. Ward — https://github.com/connerkward
