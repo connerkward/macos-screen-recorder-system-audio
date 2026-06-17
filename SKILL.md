@@ -19,7 +19,11 @@ BlackHole / loopback virtual device, no sudo; only the standard Screen Recording
 (granted once to whatever app shells out). It is *not* a general "better than OBS/Screen
 Studio" tool — it fills exactly the headless-CLI-with-system-audio gap.
 
-The broader record→polish workflow lives in the screencast skill, which calls this; the
-post-production studio is screenstudio-alternative. Published publicly as
-`macos-screen-recorder-system-audio` via publish-skill (repo is a tool + skill, not a
-pure skill).
+`sck-record` is the raw capture primitive — it records, nothing more. To polish a
+recording afterward (idle speed-up, auto-zoom, keystroke chips, smoothed cursor,
+vertical export), pair it with
+[screenstudio-alternative-skill](https://github.com/connerkward/screenstudio-alternative-skill):
+record with `sck-record --no-cursor <out.mp4> <seconds>`, then run its post-production
+pass on the resulting mp4. (Auto-zoom and keystroke overlays additionally need an
+input-event log captured *during* recording, which that skill supplies; `sck-record`'s
+pixels alone cover idle speed-up, cursor smoothing, and vertical export.)
