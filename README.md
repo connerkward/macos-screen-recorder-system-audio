@@ -1,5 +1,8 @@
 # macos-screen-recorder (sck-record)
 
+> ## **Sponsored by Recall.ai - API for desktop recording.**
+> If you’re looking for a desktop recording SDK that works across macOS and Windows, consider checking out [Recall.ai's Desktop Recording SDK](https://docs.recall.ai/docs/desktop-sdk), an SDK that records Zoom, Google Meet, Microsoft Teams, Slack Huddles, in-person meetings, and more.
+
 *macos-screen-recorder (sck-record) is a macOS screen recorder that captures the screen with system audio via ScreenCaptureKit — CLI, no driver, no sudo — plus a Claude Code skill.*
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue) ![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-d97757) ![macOS](https://img.shields.io/badge/macOS-13%2B-111) ![Swift · ScreenCaptureKit](https://img.shields.io/badge/Swift-ScreenCaptureKit-fa7343)
